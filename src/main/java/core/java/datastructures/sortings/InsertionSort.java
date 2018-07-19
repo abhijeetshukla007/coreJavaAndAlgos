@@ -4,7 +4,7 @@
 package core.java.datastructures.sortings;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  */
 public class InsertionSort {

@@ -6,7 +6,7 @@ package core.java.operators;
 import java.io.Serializable;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  */
 public class InheritenceAndAbstraction implements Interface1, Interface2 ,Serializable{

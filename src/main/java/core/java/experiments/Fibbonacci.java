@@ -6,7 +6,7 @@ package core.java.experiments;
 import java.util.Scanner;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  */
 public class Fibbonacci {

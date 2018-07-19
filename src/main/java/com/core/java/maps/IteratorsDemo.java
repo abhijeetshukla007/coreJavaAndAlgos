@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  */
 public class IteratorsDemo {

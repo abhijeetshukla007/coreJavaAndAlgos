@@ -7,7 +7,7 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  */
 public class CursorsDemo {

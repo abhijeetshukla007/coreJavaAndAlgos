@@ -3,7 +3,7 @@ package core.java.datastructures;
 import java.util.Hashtable;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  */
 public class HashTableTest {

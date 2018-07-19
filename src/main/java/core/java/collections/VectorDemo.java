@@ -16,7 +16,7 @@ import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  */
 public class VectorDemo extends Vector {

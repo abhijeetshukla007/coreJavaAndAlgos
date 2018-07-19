@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * @author M1034403
+ * @author abhijeet
  * 
  *         // Java program to output the maximum occurring character // in a
  *         string *

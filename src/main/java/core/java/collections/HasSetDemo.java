@@ -6,7 +6,7 @@ package core.java.collections;
 import java.util.HashSet;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  */
 public class HasSetDemo {

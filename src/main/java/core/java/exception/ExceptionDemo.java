@@ -6,7 +6,7 @@ package core.java.exception;
 import javax.jws.Oneway;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  *
  *         Exception should b

@@ -10,7 +10,7 @@ import java.util.ListIterator;
 import java.util.Spliterator;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  */
 public class LinkedList extends java.util.LinkedList<Object> {

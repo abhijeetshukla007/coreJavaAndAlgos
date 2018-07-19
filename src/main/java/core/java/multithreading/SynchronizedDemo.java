@@ -4,7 +4,7 @@
 package core.java.multithreading;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  */
 public class SynchronizedDemo {

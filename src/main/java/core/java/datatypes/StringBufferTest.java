@@ -4,7 +4,7 @@
 package core.java.datatypes;
 
 /**
- * @author M1034403
+ * @author abhijeet
  *
  */
 public class StringBufferTest {
