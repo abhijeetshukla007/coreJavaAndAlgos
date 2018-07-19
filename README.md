@@ -1,2 +1,2 @@
-# coreJavaAndAlgos
-Repository for sample core Java practice codes and Algos
+# coreJava
+experimented codes of java
