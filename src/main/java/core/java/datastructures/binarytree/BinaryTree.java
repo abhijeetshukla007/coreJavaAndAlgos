@@ -1,4 +1,4 @@
-package core.java.datastructures;
+package core.java.datastructures.binarytree;
 
 class Node {
 	int key;
