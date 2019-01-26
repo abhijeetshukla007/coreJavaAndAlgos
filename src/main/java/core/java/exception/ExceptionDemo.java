@@ -3,8 +3,6 @@
  */
 package core.java.exception;
 
-import javax.jws.Oneway;
-
 /**
  * @author abhijeet
  *

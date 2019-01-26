@@ -23,33 +23,55 @@ public class ReversingLinkList {
 			temp = temp.next;
 
 		}
-		Node<Integer> reversed = reverseLinkedList(head);
-		System.out.println("reversed list");
+		Node<Integer> reversed = reverseLinkedListApproach2(head);
+		System.out.println("reversed list" + head);
+
 		while (reversed != null) {
 			System.out.println(reversed.value);
 			reversed = reversed.next;
 		}
-		System.out.println(reversed.value);
 	}
 
 	/**
 	 * @param head
 	 * @return
 	 */
-	private static Node<Integer> reverseLinkedList(Node<Integer> head) {
-		Node<Integer> temp = head;
-		Node<Integer> old = head;
-		old.next = null;
-		Node<Integer> tmp = null;
-		while (temp.next != null) {
-			tmp = new Node<Integer>(temp.next.value);
-			tmp.next = old;
-			old = tmp;
-			temp = temp.next;
+	private static Node<Integer> reverseLinkedListApproach1(Node<Integer> head) {
+
+		Node<Integer> head2 = null;
+		Node<Integer> tmp = head;
+		while (tmp != null) {
+			if (head2 == null) {
+				head2 = new Node(tmp.value);
+			} else {
+				Node n = new Node(tmp.value);
+				n.next = head2;
+				head2 = n;
+			}
+			tmp = tmp.next;
 		}
-		return old;
+		tmp = null;
+		return head2;
 	}
 
+	/**
+	 * @param head
+	 * @return
+	 */
+	private static Node<Integer> reverseLinkedListApproach2(Node<Integer> head) {
+
+		Node<Integer> currentNode = head;
+		Node<Integer> prevNode = null;
+		Node<Integer> nextNode = null;
+
+		while (currentNode != null) {
+			nextNode=currentNode.next;
+			currentNode.next=prevNode;
+			prevNode=currentNode;
+			currentNode=nextNode;
+		}
+		return prevNode;
+	}
 }
 
 class Node<T> {

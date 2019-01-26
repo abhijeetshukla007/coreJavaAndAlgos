@@ -52,7 +52,7 @@ public class WaitNotifyDemo {
 }
 
 class PC {
-	Object mutex = new Object();
+//	Object mutex = new Object();
 
 	// Prints a string and waits for consume()
 	public void produce() throws InterruptedException {

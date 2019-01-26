@@ -35,6 +35,11 @@ class D extends C {
 	public strictfp void m1() {
 		System.out.println("called C strictfp");
 	}
+	
+	public strictfp Number m3() {
+		System.out.println("called m3");
+		return 2;
+	}
 
 	@Override
 	public void m1(String t) {
@@ -60,6 +65,10 @@ public class E extends D {
 		d1.m1();
 	}
 
+	public strictfp Integer m3() {
+		System.out.println("called C strictfp");
+		return 1;
+	}
 	public static void main(String[] args) {
 		
 		
@@ -74,4 +83,14 @@ public class E extends D {
 			System.out.println("in finally");
 		}
 	}
+}class temp implements tses{
+	public static void main(String[] args) {
+		System.out.println(sdahsa);
+	}
+	public static final void main(Integer args) {
+		
+	}
+}
+interface tses{
+	int sdahsa=9;
 }

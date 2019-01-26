@@ -6,6 +6,8 @@ public enum TestEnum {
 		System.out.println(TestEnum.FRIDAY);
 		System.out.println(TestEnum.values());
 	}
+	
+	
 
 	private TestEnum() {
 		System.out.println("Constructor called for : " + this.toString());

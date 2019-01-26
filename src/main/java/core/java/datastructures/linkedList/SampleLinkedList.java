@@ -36,6 +36,20 @@ public class SampleLinkedList<T> {
 		this.head = this.head.getNextNode();
 	}
 
+	public void insertAtTail(int value) {
+		Node node = new Node(value);
+		node.next = null;
+		Node current = head;
+		if (this.head == null) {
+			this.head = node;
+		} else {
+			while (current.next != null) {
+				current = current.next;
+			}
+			current.next = node;
+		}
+	}
+
 	void insertAtHead(T data) {
 		Node<Integer> newNode = new Node(data);
 		newNode.setNextNode(this.head);

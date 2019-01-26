@@ -14,7 +14,7 @@ public class MaxMinFunctions {
 
 		Comparator<Employee> comparator = Comparator.comparing(Employee::getAge);
 
-		// Get Min or Max Object
+		// Get Minimum or Max Object
 		Employee minObject = emps.stream().min(comparator).get();
 		Employee maxObject = emps.stream().max(comparator).orElseGet(null);
 
