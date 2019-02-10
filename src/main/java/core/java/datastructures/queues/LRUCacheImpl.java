@@ -122,7 +122,6 @@ public class LRUCacheImpl {
 		cache.addToCache(3);
 		cache.addToCache(4);
 		cache.printCache();
-
 		cache.getFromCache(3);
 		cache.printCache();
 		cache.addToCache(5);

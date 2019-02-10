@@ -20,8 +20,8 @@ public class HashMapDemo {
 	public static void main(String[] args) {
 		Map<String, Integer> map = new HashMap<>();
 
-		map.put(null, 2);
-		map.put(null, 4);
+		/*map.put(null, 2);
+		map.put(null, 4);*/
 		map.put("a", 4);
 
 		map.put("z", 4);

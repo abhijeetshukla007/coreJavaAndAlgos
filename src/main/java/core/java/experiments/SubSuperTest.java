@@ -21,15 +21,14 @@ public class SubSuperTest extends Parent {
 
 class Parent {
 	public Parent(int s) {
-		System.out.println("Parent construct called"+s);
+		System.out.println("Parent construct called" + s);
 	}
 
 	static int a, b;
 }
+
 class Base {
-	  private void fun() {
-	     System.out.println("Base fun");     
-	  }
+	private void fun() {
+		System.out.println("Base fun");
 	}
-	   
-	
+}

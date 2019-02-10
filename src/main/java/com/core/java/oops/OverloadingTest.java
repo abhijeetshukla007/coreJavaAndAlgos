@@ -10,8 +10,10 @@ public class OverloadingTest {
 		System.out.println(method1(10000000000000l));
 		OverloadingTest obj = new OverloadingTest();
 		// obj.sum(20,20);//now ambiguity
-		Dog d1=new Dog();  
-		//  d1.eat(); 
+		Dog d1 = new Dog();
+		System.out.println(d1.getClass().getClassLoader());
+		System.out.println(d1.getClass().getClassLoader().getClass().getClassLoader());
+		// d1.eat();
 	}
 
 	private static String method1(int s) {

@@ -12,7 +12,7 @@ public class MirrorOfBinaryTree {
 	public static void printMirror(Node root) {
 		if (root == null)
 			return;
-
+		System.out.println(root.key);
 		Node temp;
 		temp = root.left;
 		root.left = root.right;

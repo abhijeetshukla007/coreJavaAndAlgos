@@ -1,33 +1,16 @@
 package core.java.datastructures.binarytree;
 
-class Node {
-	int key;
-	Node right, left;
-
-	public Node(int key) {
-		this.key = key;
-		left = null;
-		right = null;
-	}
-
-	@Override
-	public String toString() {
-		return String.valueOf(key);
-	}
-
-}
-
 public class BinaryTree {
 	/*
-	 * Tree is a hierarchical data structure. Main uses of trees include
-	 * maintaining hierarchical data, providing moderate access and insert/
-	 * delete operations. Binary trees are special cases of tree where every
-	 * node has at most two children.
+	 * Tree is a hierarchical data structure. Main uses of trees include maintaining
+	 * hierarchical data, providing moderate access and insert/ delete operations.
+	 * Binary trees are special cases of tree where every node has at most two
+	 * children.
 	 */
 
-	static Node root;
+	public static Node root;
 
-	BinaryTree() {
+	public BinaryTree() {
 		root = null;
 	}
 
@@ -61,6 +44,8 @@ public class BinaryTree {
 		System.out.println("\n\n Mirror of Binary Tree\n");
 
 		MirrorOfBinaryTree.printMirror(root);
+		System.out.println("\n\n END  Mirror of Binary Tree\n");
+
 		PreOrderTraversal.preOrder(root);
 
 		BinaryTree tree2 = new BinaryTree();
@@ -70,7 +55,7 @@ public class BinaryTree {
 		BinaryTree.root.left.left = new Node(3);
 		BinaryTree.root.left.right = new Node(5);
 		BinaryTree.root.right.left = new Node(2);
-		
+
 		BinaryTree tree3 = new BinaryTree();
 		BinaryTree.root = new Node(9);
 		BinaryTree.root.left = new Node(5);
@@ -81,5 +66,19 @@ public class BinaryTree {
 		BinaryTree.root.right.right = new Node(2);
 
 		RootToLeafPath.rootToLeaf(BinaryTree.root);
+		System.out.println("new Preorder");
+		preOrder(tree2.root);
+	}
+
+	static void preOrder(Node root) {
+		if (root == null) {
+			return;
+		} else {
+			System.out.println(root.key);
+		}
+		preOrder(root.left);
+		preOrder(root.right);
+		System.out.println(root.key);
+
 	}
 }

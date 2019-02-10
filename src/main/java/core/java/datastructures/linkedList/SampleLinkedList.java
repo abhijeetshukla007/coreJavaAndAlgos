@@ -1,5 +1,6 @@
 package core.java.datastructures.linkedList;
 
+
 public class SampleLinkedList<T> {
 
 	public static void main(String[] args) {

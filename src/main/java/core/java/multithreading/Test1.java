@@ -40,8 +40,6 @@ class test2 implements Runnable {
 	public static void main(String[] args) {
 		System.out.println("01-da1925f0-c01b-11e6-8c98-a7787795551d".toUpperCase());
 		System.out.println("US-444AD440-E42F-11E7-85F4-FDD2CA402ABE".toLowerCase());
-
-
 		Thread t1 = new Thread(new test2());
 		t1.start();
 	}

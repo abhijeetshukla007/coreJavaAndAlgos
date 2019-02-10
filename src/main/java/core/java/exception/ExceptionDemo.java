@@ -10,58 +10,62 @@ package core.java.exception;
  *         Exception should b
  */
 
-class Encrypter{
+class Encrypter {
 	public static String encrhkj(String yiyu) {
-		if (yiyu.length()<4) {
+		if (yiyu.length() < 4) {
 			throw new IllegalArgumentException("ertyu");
 		}
-		StringBuilder buffer=new StringBuilder(yiyu.toLowerCase());
-		yiyu=buffer.reverse().toString();
+		StringBuilder buffer = new StringBuilder(yiyu.toLowerCase());
+		yiyu = buffer.reverse().toString();
 		System.out.println(yiyu);
 		return yiyu;
-		
+
 	}
-	public String  test() {
+
+	public String test() {
 		// TODO Auto-generated method stub
-return null;
+		return null;
 	}
 }
+
 public class ExceptionDemo {
-	
-	
+
 	private ExceptionDemo demo;
+
 	void start() {
 		this.takeDemo(demo);
 	}
+
 	void takeDemo(ExceptionDemo demo) {
-		
+
 	}
+
 	public static void main(String[] args) {
-		
+
 		System.out.println("qwerty".substring(0, 2));
-		Encrypter encrypter=new Encrypter();
+		Encrypter encrypter = new Encrypter();
 		encrypter.test();
-		
+
 		System.out.println(Encrypter.encrhkj("wer"));
-		
-		class Inner{
-			final Integer i6=9;
-			Integer i7=9;
-			
-			Inner(){
-				System.out.println(i6+i7);
+
+		class Inner {
+			final Integer i6 = 9;
+			Integer i7 = 9;
+
+			Inner() {
+				System.out.println(i6 + i7);
 			}
 		}
-		int i=010;
-		int j=07;
-		System.out.println(i+ ""+ j);
+		int i = 010;
+		int j = 07;
+		System.out.println(i + "" + j);
 		try {
 
 			throw new CustomException2();
 		} catch (NumberFormatException e) {
 		} catch (IllegalArgumentException e) {
 		} catch (Exception e) {
-
+			e.printStackTrace();
 		}
 
 	}

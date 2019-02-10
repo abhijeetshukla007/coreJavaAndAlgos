@@ -26,7 +26,7 @@ public class HammingWeight {
 	int bitcount(int n) {
 	  int  count = 0;
 	    while (n > 0){
-	    	System.out.println("ooop");
+	    	System.out.println("looop");
 	        count = count + 1;
 	        n = n & (n-1);
 	    }
